@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+# ============================================================
+# ThaiMaster Thai Learning Assistant - Dependencies
+# ============================================================
+# Installation: pip install -r requirements.txt
+#
+# Notes:
+# - faster-whisper will auto-download AI model (small ~1.5GB)
+# - edge-tts requires internet connection
+# - sounddevice depends on PortAudio (usually included with Windows)
+# ============================================================
+
+# ---- Speech Recognition (ASR) ----
+# Efficient implementation of OpenAI Whisper, supports CPU inference
+faster-whisper>=1.0.0
+
+# ---- Text-to-Speech (TTS) ----
+# Microsoft Edge online TTS, supports Thai language
+edge-tts>=6.0.0
+
+# ---- Audio Processing ----
+# Audio recording (based on PortAudio)
+sounddevice>=0.4.6
+# Audio file read/write (WAV format)
+soundfile>=0.12.1
+
+# ---- Audio Playback ----
+# For playing MP3/WAV (more stable than playsound)
+pygame>=2.5.2
+
+# ---- Signal Processing ----
+# scipy.signal for audio resampling
+scipy>=1.11.0
+
+# ---- Optional: UI Enhancement ----
+# ttkthemes provides more tkinter themes (optional)
+# ttkthemes>=3.2.2
